@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Restonux
+# Copyright (C) 2010 
+
+# Nicolas Adba 
+# Philippe Gautier 
+# Mickael Connesson 
+
+# contact : slurp.miammiam _ @ _ gmail com
+
+#   This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 2 of the License, or
+#   (at your option) any later version.
+
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+
+#   You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. 
+
+# Script à placer dans /opt/drbl/share/ocs/postrun/
+# Le nom du fichier ne doit pas comporter de caractère spéciaux : pas de points
+
+
+cat /opt/drbl/share/ocs/postrun/mac-hostname | (while read ligne 
+#variables modifiées dans un sous-shell à cause du pipe
+do
+{
+
+	# On chope la ou les adresses MAC du pc
+	MyHwAddr="$(/sbin/ifconfig | grep -Eiwo "[0-f][0-f]:[0-f][0-f]:[0-f][0-f]:[0-f][0-f]:[0-f][0-f]:[0-f][0-f]")"
+	
+	# On chope l'adresse MAC de la ligne n du fichier
+	FileAddr="$(echo "$ligne" | tr -d " " | cut -d= -f1)"
+
+
+	# Si la ligne correspond à l'adresse MAC du pc
+	if [ -n "$(echo "$MyHwAddr" | grep -Eiwo "$FileAddr")" ] ; then
+	{
+		
+		# On chope le hostname qui lui correspond
+		FileName="$(echo "$ligne" | tr -d " " | cut -d= -f2)"
+		
+		# On change le hostname du pc windows
+		/opt/drbl/sbin/ocs-chnthn -b -v _fix -p "$FileName"
+		
+		exit 0
+	}
+	fi
+
+}
+done
+
+
+
+)
+
+exit 0

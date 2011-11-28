@@ -1,0 +1,153 @@
+#listing
+{
+border: medium solid #6495ed;
+border-collapse: collapse;
+width: 50%;
+text-align:center;
+
+}
+
+#listing tr th
+{
+
+color:rgb(78, 191, 55);
+font-family: monospace;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+background-color: #D0E3FA;
+}
+#listing tr td
+{
+border-style:solid;
+width:20em;
+font-family: monospace;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: #ffffff;
+
+}
+#listing tr td  a
+{
+display: block;
+}
+#listing a:hover
+{
+background-color:blue;
+color:white;
+
+}
+
+h1:before
+{
+content: url("../images/square-green.png"); /* Mettre une image devant les titres */
+}
+
+h1
+{
+color: #4EBF31;
+text-align:left;
+font-size: 17.5px;
+margin-top:2.4%;
+}
+
+
+h1.erreur
+{
+color:red;
+text-decoration:blink;
+}
+
+
+
+
+p
+{
+
+padding-left:0px;
+
+font-size: 13px;
+
+font-family: Verdana,Tahoma,arial;
+
+}
+
+
+
+
+
+
+caption
+
+{
+
+font-size: 13px;
+
+font-family: Verdana,Tahoma,arial;
+
+}
+
+
+
+#icone:before
+{
+content: url("images/square-green.png"); /* Mettre une image de question */
+}
+
+
+
+#style
+
+{
+
+/*margin-left:60px;
+
+padding-left:50px;*/
+
+font-size: 13px;
+
+font-family: Verdana,Tahoma,arial;
+
+}
+
+
+#gestion p label
+{
+text-align:right;
+padding-right:5%;
+width:35%;
+float:left;
+
+}
+
+#gestion p input
+{
+width:100px;
+}
+
+
+
+
+
+#lien_important
+{
+display:block;
+font-size: 14px;
+color:#4F82CB;
+font-weight:bold;
+
+}
+
+#lien_important:before
+{
+padding-top:150px;
+content: url("../images/fleche.jpg"); /* Mettre une image devant les titres */
+}
+
+#modif_supp
+{
+margin-left: 60px;
+}
+
