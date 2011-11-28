@@ -1,4 +1,5 @@
 <?php
+
 include_once("conf/config.php");
 
 /* les variables menu ici */
