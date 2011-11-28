@@ -1,0 +1,295 @@
+/* 
+    Document   : test
+    Created on : 3 nov. 2011, 11:14:31
+    Author     : Dieu_KroM
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #A69F8F;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+img {
+    border: medium none;
+}*/
+li { /* cache les puce dans les li , ici le grand menu affiche normalement des puces a gauche */
+    list-style-type: none;
+}
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #E5EAEB;
+    margin: 0;
+    text-align: center;
+}
+a {
+    color: #FF6600;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    display: none;
+}
+.spacer {
+    clear: both;
+    font-size: 1px;
+}
+
+.hidden {
+    font-size: 1px;
+    left: -10000px;
+    position: absolute;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+#global {
+    color: #403F3D;
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 0.75em;
+    margin: 10px auto;
+    text-align: left;
+    width: 999px;
+}/*
+#entete {
+    color: #999999;
+    font-size: 0.88em;
+    width: 775px;
+}
+#entete a {
+    color: #999999;
+}
+#entete .spacer {
+    height: 1px;
+}
+#enteteAccessibilite {
+    float: left;
+}
+#enteteAccessibilite li {
+    display: inline;
+}
+#enteteLangues {
+    float: right;
+}
+#enteteLangues li {
+    display: inline;
+    text-transform: uppercase;
+}*/
+#bandeau {
+    background-color: #B5AE9E;
+    background-image: url("fond-bandeau.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 147px;
+}
+#bandeauLogos {
+    float: left;
+    padding-left: 2px;
+}
+#bandeauLogos img {
+    margin-left: 10px;
+}
+#page { /* conteneur de la page  */
+    background-color: #FFFFFF;
+    /*background-image: url("images/fond-page.gif");*/
+    /*background-position: 0 0;*/
+    background-repeat: repeat-y;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    border-style: none solid;
+    clear: left;
+    min-height: 600px;
+}
+#pageMenu {
+    float: left;
+    margin-top: 35px;
+    width: 223px;
+}
+/*
+#pageMenuCoordonnees {
+    color: #ABABCE;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+*/
+/*****************************************/
+/*      navigation menu         */
+.navigation ul {
+    background: none repeat scroll 0 0 #B5AE9E;
+    color: #FFFFFF;
+    width: 222px;
+}
+
+.navigation ul li {
+    border-top: 1px solid #E0E0E0;
+    padding: 0;
+}
+
+.navigation ul li em {
+    font-style: normal;
+}
+.navigation ul li ul li:first-child {
+    border-top-style: none;
+}
+
+.navigation a {
+    background-color: #CCC7BC;
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.9em;
+    height: auto;
+    padding: 5px 27px 5px 10px;
+    text-decoration: none;
+}
+
+.navigation ul li em a {
+/*    background-color: #B5AE9E;*/
+}
+
+.navigation .toggleSubMenu a {
+    background-image: url("images/down.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.navigation .open a {
+    background-image: url("images/up.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.navigation a:hover, .navigation a:focus, .navigation a:active {
+    background-color: #B5AE9E;
+    color: #FFFFFF;
+}
+.navigation .subMenu {
+    background-color: #FFFFFF;
+}
+.navigation ul.subMenu a {
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #989489;
+}
+.navigation ul.subMenu a:hover, .navigation ul.subMenu a:focus, .navigation ul.subMenu a:active {
+    background-color: #B5AE9E;
+    color: #FFFFFF;
+}
+/* fin navigation */
+#pied {
+    /*float: left;*/
+    background-color: #B5AE9E;
+    background-image: url("fond-pied.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 0.88em;
+    padding: 5px 10px;
+}
+#pied a {
+    color: #FFFFFF;
+   /* float:right;*/
+}
+/******************************************************************************/
+/****************** debut de l'intégartion css restonux ***********************/
+#menu /* a refaire lorsque le menu js sera implémenter */
+{
+display: inline;
+
+margin-top: 0px;
+height:580px;
+font-weight: bold;
+font-size: 12px;
+text-align: center;
+background-color:#FFFFFF;
+width:222px;
+border-radius: 10px 10px 10px 10px;   
+}
+
+#contenu
+{
+   
+/*
+  
+margin-top: -21px;
+background-color:#FFFFFF;
+padding-left: 200px;
+margin-left:23px;
+width: 704px; 
+height:820px;
+color: #000000;
+overflow: auto;
+*/
+}
+#entete h1
+{
+background-color: #6495ed;
+font-size: 25px;
+color:#FFFFFF;
+margin-top:0px;
+text-align:left;
+padding-left: 30px;
+border-radius: 0px 0px 10px 10px;
+border: 1px #4F82CB solid;
+
+}
+#entete h1 img{ 
+   margin-right: 10px;
+   margin-top: 2px;
+   float: right;
+   border: none;
+}
+
+/******************************************************************************/
+/****************** fenetre de restonux popup ***********************/
+.leightbox_top {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+
+.leightbox_bottom {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+
+
+
+

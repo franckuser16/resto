@@ -2,7 +2,6 @@
 
 if (isset($_POST["action"]))
 {
-
 $pass=$_POST["pass"];
 $resultat="<h1 class=\"erreur\">authentification echec</h1>";
 
