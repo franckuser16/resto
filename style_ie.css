@@ -1,0 +1,21 @@
+/* 
+    Document   : style_ie
+    Created on : 29 nov. 2011, 11:03:51
+    Author     : Robin guindeuil <guindeuil-pro@live.fr>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+ 
+    #menu,#contenu{
+    display: inline;
+    zoom: 1;
+ 
+}
+
+

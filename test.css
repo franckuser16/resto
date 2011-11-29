@@ -1,7 +1,7 @@
 /* 
     Document   : test
     Created on : 3 nov. 2011, 11:14:31
-    Author     : Dieu_KroM
+    Author     :  Robin guindeuil <guindeuil-pro@live.fr>
     Description:
         Purpose of the stylesheet follows.
 */
@@ -105,21 +105,61 @@ hr {
 #bandeauLogos img {
     margin-left: 10px;
 }
-#page { /* conteneur de la page  */
-    background-color: #FFFFFF;
-    /*background-image: url("images/fond-page.gif");*/
-    /*background-position: 0 0;*/
-    background-repeat: repeat-y;
-    border-left: 1px solid #E0E0E0;
-    border-right: 1px solid #E0E0E0;
+
+#page {  /*conteneur de la page  */
+    
+    background-color: #EEE;
+    border-left: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
     border-style: none solid;
-    clear: left;
-    min-height: 600px;
+    /*clear: left;*/
+    /*min-height: 600px; */
+    
+    
 }
+
 #pageMenu {
-    float: left;
+    /*float: left;*/
     margin-top: 35px;
-    width: 223px;
+    
+    border: 1px black solid;
+   
+}
+#menu /* a refaire lorsque le menu js sera implémenter */
+{   
+  border: 1px red solid;  
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+
+ /*   
+margin-top: 0px;
+height:580px;
+font-weight: bold;
+font-size: 12px;
+text-align: center;
+background-color:#FFFFFF;
+width:222px;
+border-radius: 10px 10px 10px 10px;   
+ */
+}
+
+#contenu
+{   
+  border: 1px blue solid;  
+  display: inline-block;
+  vertical-align: top;
+  width: 600px;
+    /*
+    margin-top: -21px;
+    background-color:#FFFFFF;
+    padding-left: 200px;
+    margin-left:23px;
+    width: 704px; 
+    height:820px;
+    color: #000000;
+    overflow: auto;
+    */
 }
 /*
 #pageMenuCoordonnees {
@@ -206,35 +246,6 @@ hr {
 }
 /******************************************************************************/
 /****************** debut de l'intégartion css restonux ***********************/
-#menu /* a refaire lorsque le menu js sera implémenter */
-{
-display: inline;
-
-margin-top: 0px;
-height:580px;
-font-weight: bold;
-font-size: 12px;
-text-align: center;
-background-color:#FFFFFF;
-width:222px;
-border-radius: 10px 10px 10px 10px;   
-}
-
-#contenu
-{
-   
-/*
-  
-margin-top: -21px;
-background-color:#FFFFFF;
-padding-left: 200px;
-margin-left:23px;
-width: 704px; 
-height:820px;
-color: #000000;
-overflow: auto;
-*/
-}
 #entete h1
 {
 background-color: #6495ed;

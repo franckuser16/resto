@@ -80,7 +80,10 @@ else
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" media="screen" href="test.css"/>    
+<link rel="stylesheet" type="text/css" media="screen" href="test.css"/> 
+<!--[if IE ]>
+        <link rel="stylesheet" href="style_ie.css" />
+<![endif]-->
 
 <!--<link rel="stylesheet" type="text/css" href="style.css">-->
 <!--<link rel="stylesheet" type="text/css" href="contenu/style.css">-->
@@ -167,7 +170,7 @@ $(document).ready( function () {
                 </div> <!-- fin #bandeauLogos -->
         </div> <!-- fin #bandeau -->       
         <hr />
-<div id="ensemble">
+<div id="page">
 
 <div id="entete">
 <h1><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=logout" ><img src="images/deco.png"></a><?php echo "$titre"; ?></h1>
@@ -228,7 +231,7 @@ $(document).ready( function () {
 
 <?php  } ?>
 </div>
-</div>    
+</div>  
 <div id="contenu">
 <?php
 
