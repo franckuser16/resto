@@ -17,5 +17,8 @@
     zoom: 1;
  
 }
-
-
+#contenu{
+      margin-left: 0px;
+      width: 777px;
+      /*height: 600px;*/
+}

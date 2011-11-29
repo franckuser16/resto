@@ -18,8 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #A69F8F;
 }
 * {
+    
     margin: 0;
     padding: 0;
+    
 }
 /*
 img {
@@ -33,7 +35,7 @@ html {
 }
 body {
     background-color: #E5EAEB;
-    margin: 0;
+    margin: 0; /* ?????? */
     text-align: center;
 }
 a {
@@ -66,31 +68,8 @@ hr {
     margin: 10px auto;
     text-align: left;
     width: 999px;
-}/*
-#entete {
-    color: #999999;
-    font-size: 0.88em;
-    width: 775px;
 }
-#entete a {
-    color: #999999;
-}
-#entete .spacer {
-    height: 1px;
-}
-#enteteAccessibilite {
-    float: left;
-}
-#enteteAccessibilite li {
-    display: inline;
-}
-#enteteLangues {
-    float: right;
-}
-#enteteLangues li {
-    display: inline;
-    text-transform: uppercase;
-}*/
+
 #bandeau {
     background-color: #B5AE9E;
     background-image: url("fond-bandeau.jpg");
@@ -107,49 +86,52 @@ hr {
 }
 
 #page {  /*conteneur de la page  */
-    
-    background-color: #EEE;
-    border-left: 2px solid #E0E0E0;
-    border-right: 2px solid #E0E0E0;
+   background-color: #BBB;
+/*
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
     border-style: none solid;
-    /*clear: left;*/
-    /*min-height: 600px; */
-    
-    
+    clear: left;
+*/ 
 }
 
 #pageMenu {
-    /*float: left;*/
-    margin-top: 35px;
-    
-    border: 1px black solid;
-   
+    margin-top: 30px;
+    /*width: 225px;*/
 }
-#menu /* a refaire lorsque le menu js sera implémenter */
-{   
-  border: 1px red solid;  
-  display: inline-block;
-  vertical-align: top;
-  width: 250px;
 
- /*   
-margin-top: 0px;
-height:580px;
-font-weight: bold;
-font-size: 12px;
-text-align: center;
-background-color:#FFFFFF;
-width:222px;
-border-radius: 10px 10px 10px 10px;   
- */
+#menu 
+{   
+    margin: 5px;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 600px;
+    background-color: #d6d1c6;
+    /*   
+    margin-top: 0px;
+    height:580px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    background-color:#FFFFFF;
+    width:222px;
+    border-radius: 10px 10px 10px 10px;   
+    */
 }
 
 #contenu
-{   
-  border: 1px blue solid;  
-  display: inline-block;
+{    
+ 
+  display: inline-block;  
   vertical-align: top;
-  width: 600px;
+  background-color: #d7d7d7;
+  /*/border: 1px red solid;*/
+  border-radius:10px 10px 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 5px 15px 15px;
+  width: 735px;
     /*
     margin-top: -21px;
     background-color:#FFFFFF;
@@ -231,7 +213,7 @@ border-radius: 10px 10px 10px 10px;
 }
 /* fin navigation */
 #pied {
-    /*float: left;*/
+    display: block;
     background-color: #B5AE9E;
     background-image: url("fond-pied.jpg");
     background-position: center bottom;
@@ -239,6 +221,8 @@ border-radius: 10px 10px 10px 10px;
     color: #FFFFFF;
     font-size: 0.88em;
     padding: 5px 10px;
+    border-radius: 0px 0px 10px 10px;
+
 }
 #pied a {
     color: #FFFFFF;

@@ -254,7 +254,8 @@ else
 ?>
 
 </div>
-
+</div>
+        
 <div id="pied">
     <p>
         Universit&eacute; de Poitiers - 15, rue de l'H&ocirc;tel Dieu - 86034 POITIERS Cedex - France - T&eacute;l : (33) (0)5 49 45 30 00 - Fax : (33) (0)5 49 45 30 50 - webmaster@univ-poitiers.fr
@@ -262,8 +263,5 @@ else
     </p>
 </div><!-- Fin div#pied -->
 
-
-
-</div>
 </body>
 </html>
