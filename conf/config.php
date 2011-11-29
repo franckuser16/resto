@@ -2,7 +2,7 @@
 /* variables de mysql */
 $mysql_hote="localhost";
 $mysql_login="root";
-$mysql_password="mysql";
+$mysql_password="tpinfo";
 $mysql_database="drbl";
 
 $addr_broadcast="255.255.255.255"; // Indiquer ici l'adresse de broadcast par lesquels les magics packets seront lancé

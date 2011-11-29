@@ -1,0 +1,2 @@
+#ignorer les fichiers swp de sauvegarde générés par vi
+*.swp
