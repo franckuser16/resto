@@ -19,6 +19,9 @@
 }
 #contenu{
       margin-left: 0px;
-      width: 777px;
-      /*height: 600px;*/
+      width: 760px;    
+}
+#page_lvl1{
+    height: 400px;
+    margin-top: 0px;
 }

@@ -43,8 +43,7 @@ else
 {
 	$menu="accueil";
 }
-
-		
+	
 	if ($menu == "logout")
 	{
 		session_destroy();
@@ -54,7 +53,6 @@ else
 		$_SESSION['login']="";
 		$menu="accueil";
 	}
-
 	
 if ($menu == "access")
 {
@@ -62,8 +60,7 @@ if ($menu == "access")
 	//changement du menu la page access n'existe pas 
 	$menu="accueil";
 }
-		
-			
+					
 if ($right == 0)
 {
 	$titre="Authentification";
@@ -72,12 +69,10 @@ else
 {
 	$titre=$list_menu["$menu"];
 }
-
 	
 ?>
 <html>
 <head><title>Restonux</title>
-
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" media="screen" href="test.css"/> 
@@ -98,30 +93,30 @@ else
 <link rel="shortcut icon" href="http://sfa.univ-poitiers.fr/images/favicon.ico" />    
 <!-- JavaScript -->
 <!--<script type="text/javascript" src="scripts/prototype.js"></script>-->
-<script type="text/javascript" src="scripts/lightbox.js"></script>
+<!--<script type="text/javascript" src="scripts/lightbox.js"></script>-->
 
 <!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/adminsite/toolbox/toolbox.js"></script>-->
 <!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/jsp/scripts/defaut.js"></script>-->
-<script type="text/javascript" src="http://sfa.univ-poitiers.fr/jsp/scripts/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="jquery-1.4.2.js"></script>
 <!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/jsp/scripts/browserdetect.js"></script>-->
 
 <script type="text/javascript">
 <!--
 $(document).ready( function () {
-    // On cache les sous-menus :
-    //$(".navigation ul.subMenu").hide();
-    
-    $(".navigation ul.subMenu:not('.open_at_load')").hide();
-    $("#null").addClass("open");
-    
-    // On sï¿½lectionne tous les items de liste portant la classe "toggleSubMenu"
-    // et on remplace l'ï¿½lï¿½ment span qu'ils contiennent par un lien :
-    $(".navigation li.toggleSubMenu span").each( function () {
-        // On stocke le contenu du span :
-        var TexteSpan = $(this).text();
-        $(this).replaceWith('<a href="" title="Afficher le sous-menu" class="uppercase">' + TexteSpan + '<\/a>') ;
-    } ) ;
- 
+//    // On cache les sous-menus :
+//    //$(".navigation ul.subMenu").hide();
+//    
+//    $(".navigation ul.subMenu:not('.open_at_load')").hide();
+//    $("#null").addClass("open");
+//    
+//    // On sï¿½lectionne tous les items de liste portant la classe "toggleSubMenu"
+//    // et on remplace l'ï¿½lï¿½ment span qu'ils contiennent par un lien :
+//    $(".navigation li.toggleSubMenu span").each( function () {
+//        // On stocke le contenu du span :
+//        var TexteSpan = $(this).text();
+//        $(this).replaceWith('<a href="" title="Afficher le sous-menu" class="uppercase">' + TexteSpan + '<\/a>') ;
+//    } ) ;
+// 
     // On modifie l'ï¿½vï¿½nement "click" sur les liens dans les items de liste
     // qui portent la classe "toggleSubMenu" :
     $(".navigation li.toggleSubMenu > a").click( function () {
@@ -160,12 +155,11 @@ $(document).ready( function () {
                 
                 <div id="bandeauLogos">
                 
-                        <a href="http://www.univ-poitiers.fr" title="Aller sur le portail de l'Universit&eacute; de Poitiers"><img src="http://sfa.univ-poitiers.fr/images/logo-up.gif" alt="Logo de l'Universit&eacute; de Poitiers" /></a>
-                        
+                        <a href="http://www.univ-poitiers.fr" title="Aller sur le portail de l'Universit&eacute; de Poitiers">
+                        <img src="http://sfa.univ-poitiers.fr/images/logo-up.gif" alt="Logo de l'Universit&eacute; de Poitiers" />
+                        </a>                       
                         <a href="http://sfa.univ-poitiers.fr/" title="Retour &agrave; la page d'accueil du site" accesskey="1">
-                                                
-                        <img src="http://sfa.univ-poitiers.fr/images/logo-composantes-sfa.gif" alt="Logo de UFR Science Fondamentales et Appliquées - Université de Poitiers" />
-                                                                        
+                        <img src="http://sfa.univ-poitiers.fr/images/logo-composantes-sfa.gif" alt="Logo de UFR Science Fondamentales et Appliquées - Université de Poitiers" />                                                                       
                         </a>                        
                 </div> <!-- fin #bandeauLogos -->
         </div> <!-- fin #bandeau -->       
@@ -175,23 +169,21 @@ $(document).ready( function () {
 <div id="entete">
 <h1><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=logout" ><img src="images/deco.png"></a><?php echo "$titre"; ?></h1>
 </div>
-
+    <div id="page_lvl1">
 <div id="menu">
-<div id="pageMenu" class="navigation">
+
     
 <?php
 	if ($right != 0)
 	{
 ?>
 <!-- Affichage du menu-->
-
+<div id="pageMenu" class="navigation">
 <p class="hidden">Menu principal :</p>
 <ul>
     <li id="menu1">
-        <span class="uppercase">
-            
-                <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=accueil">Accueil</a>  
-               
+        <span class="uppercase">            
+                <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=accueil">Accueil</a>                
         </span>   
     </li>    
     <li id="menu2" class="toggleSubMenu">
@@ -252,7 +244,6 @@ else
 }
 
 ?>
-
 </div>
 </div>
         
@@ -262,6 +253,8 @@ else
         - <a href="/83681377/0/fiche___pagelibre/&amp;RH=1268304565657" accesskey="8">Cr&eacute;dits et mentions l&eacute;gales</a>
     </p>
 </div><!-- Fin div#pied -->
+    
+</div>
 
 </body>
 </html>
