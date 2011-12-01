@@ -70,7 +70,7 @@ hr {    /* utilise en particuiler dans les contenus  */
 /******************************************************************************/
 
 #bandeau { /* baniere du site avec nom,position, taille, bord,reptition */
-    background-image: url("images/fond-bandeau.png");   /* direction du bandeau */
+    background-image: url("../images/fond-bandeau.png");   /* direction du bandeau */
     background-position: 0 0;                           /* position en fond */
     background-repeat: no-repeat;                       /* pas de repetition de l'image */
     height: 147px;                                      /* hauteur */
@@ -148,7 +148,7 @@ hr {    /* utilise en particuiler dans les contenus  */
 
 #pied { /* pied de la page avec l'image de ainsi que tout le parametre */
     display: block;                                     /* div mise en block pour facilité le positionnement */
-    background-image: url("images/fond-pied.png");      /* chemin vers l'image' */
+    background-image: url("../images/fond-pied.png");      /* chemin vers l'image' */
     background-position: center bottom;                 /* positionnement de l'image */
     background-repeat: no-repeat;                       /* pas de répétition  de l'image */
     color: #FFFFFF;                                     /* texte mis en blanc */

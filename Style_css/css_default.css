@@ -71,7 +71,7 @@ hr {
 
 #bandeau {
    /* background-color: #B5AE9E;*/
-    background-image: url("fond-bandeau.png");
+    background-image: url("../images/fond-bandeau.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 147px;
@@ -121,7 +121,7 @@ hr {
 
 #pageMenu {
    min-width: 220px;
-   min-height: 230px;
+   min-height: 145px;
    margin-top: 30px;
    margin-bottom: 30px;
 }
@@ -224,7 +224,7 @@ hr {
 #pied {
     display: block;
     /*background-color: #B5AE9E;*/
-    background-image: url("fond-pied.png");
+    background-image: url("../images/fond-pied.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     color: #FFFFFF;

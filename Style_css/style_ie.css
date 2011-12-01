@@ -24,10 +24,9 @@
 }
 #pageMenu {
     width: 222px;
-    height: 230px;
+    height: 183px;
 }
-#auth div{
-    
+#auth div{   
     display: inline;
     zoom: 1;
     padding: 5px;

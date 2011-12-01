@@ -22,6 +22,7 @@ li { /* cache les puce dans les li , ici le grand menu affiche normalement des p
 #menu /* def general du menu donne les infos de base (taille,forme, etc)  */
 {   
     margin: 5px;                                        /* bordure exterieur */
+    background-color: #D6D1C6;                          /* couleur du fond de la div */
     border-radius: 10px 10px 10px 10px;                 /* sauf pour IE lissage des bords de la div */
     display: inline-block;                              /* trans du menu en inline-block pour meilleur positionnement */
     vertical-align: top;                                /* pour aligner les div sur leurs parties hautes  */   
@@ -29,7 +30,7 @@ li { /* cache les puce dans les li , ici le grand menu affiche normalement des p
 
 #pageMenu {
    min-width: 220px;                                    /* taille mini */
-   min-height: 230px;                                   /* hauteur mini */
+   min-height: 145px;                                   /* hauteur mini */
    margin-top: 30px;                                    /* bordure haut */
    margin-bottom: 30px;                                 /* bordure bas */
 }

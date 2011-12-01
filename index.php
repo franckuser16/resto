@@ -75,19 +75,14 @@ else
 <head><title>Restonux</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" media="screen" href="css_default.css"/> 
-<!--<link rel="stylesheet" type="text/css" media="screen" href="general_style.css"/> -->
+<link rel="stylesheet" type="text/css" media="screen" href="Style_css/general_style.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="Style_css/menu_style.css"/> 
+<link rel="stylesheet" type="text/css" media="screen" href="Style_css/autre_style.css"/> 
+
 <!--[if IE ]>
-        <link rel="stylesheet" href="style_ie.css" />
+        <link rel="stylesheet" href="Style_css/style_ie.css" />
 <![endif]-->
 
-<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-<!--<link rel="stylesheet" type="text/css" href="contenu/style.css">-->
-
-<!--
-<link rel="stylesheet" type="text/css" media="screen" href="http://sfa.univ-poitiers.fr/jsp/styles/composantes-defaut/bandeauup.css" />
-<link rel="stylesheet" type="text/css" media="print" href="http://sfa.univ-poitiers.fr/jsp/styles/composantes-defaut/bandeauup-print.css" /> 
--->
 <!-- Favicon pour Firefox -->    
 <link rel="icon" type="image/gif" href="http://sfa.univ-poitiers.fr/images/favicon.gif" />
 <!-- Favicon pour IE -->
@@ -96,28 +91,11 @@ else
 <!--<script type="text/javascript" src="scripts/prototype.js"></script>-->
 <!--<script type="text/javascript" src="scripts/lightbox.js"></script>-->
 
-<!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/adminsite/toolbox/toolbox.js"></script>-->
-<!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/jsp/scripts/defaut.js"></script>-->
 <script type="text/javascript" src="jquery-1.4.2.js"></script>
-<!--<script type="text/javascript" src="http://sfa.univ-poitiers.fr/jsp/scripts/browserdetect.js"></script>-->
 
 <script type="text/javascript">
 <!--
 $(document).ready( function () {
-//    // On cache les sous-menus :
-//    //$(".navigation ul.subMenu").hide();
-//    
-//    $(".navigation ul.subMenu:not('.open_at_load')").hide();
-//    $("#null").addClass("open");
-//    
-//    // On sï¿½lectionne tous les items de liste portant la classe "toggleSubMenu"
-//    // et on remplace l'ï¿½lï¿½ment span qu'ils contiennent par un lien :
-//    $(".navigation li.toggleSubMenu span").each( function () {
-//        // On stocke le contenu du span :
-//        var TexteSpan = $(this).text();
-//        $(this).replaceWith('<a href="" title="Afficher le sous-menu" class="uppercase">' + TexteSpan + '<\/a>') ;
-//    } ) ;
-// 
     // On modifie l'ï¿½vï¿½nement "click" sur les liens dans les items de liste
     // qui portent la classe "toggleSubMenu" :
     $(".navigation li.toggleSubMenu > a").click( function () {
