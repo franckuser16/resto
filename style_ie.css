@@ -10,12 +10,9 @@
    TODO customize this sample style
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
-
- 
     #menu,#contenu{
     display: inline;
     zoom: 1;
- 
 }
 #contenu{
       margin-left: 0px;
@@ -24,4 +21,14 @@
 #page_lvl1{
     height: 400px;
     margin-top: 0px;
+}
+#pageMenu {
+    width: 222px;
+    height: 230px;
+}
+#auth div{
+    border:1px black solid;
+    display: inline;
+    zoom: 1;
+    padding: 5px;
 }

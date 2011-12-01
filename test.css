@@ -11,12 +11,12 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 body {
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     color: #000000;
     
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #A69F8F;
+    color: #605949;
 }
 * {   
     margin: 0;
@@ -62,7 +62,7 @@ hr {
     text-transform: uppercase;
 }
 #global {
-   /* box-shadow:10px 10px 20px #000000;*/
+    
     color: #403F3D;
     font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
     font-size: 0.75em;
@@ -86,16 +86,24 @@ hr {
 #bandeauLogos img {
     margin-left: 10px;
 }
-
+#auth{
+   text-align: center;      
+}
+#auth div{
+    display: inline-block;
+    padding: 5px;
+}
+#bouton_valid{
+    width: 180px;
+    height: 30px;
+    background-color: #d6d1c6; 
+    color: #605949; 
+    font-weight: bold;
+}
+#bouton_valid:hover{
+    background-color: #B5AE9E;   
+}
 #page {  /*conteneur de la page bandeau + pied */
-
-  
-/*
-    border-left: 1px solid #E0E0E0;
-    border-right: 1px solid #E0E0E0;
-    border-style: none solid;
-    clear: left;
-*/ 
 }
 
 #page_lvl1{  /* conteneur de la page sans le bandeau et le pied de page */
@@ -110,31 +118,21 @@ hr {
     border-radius: 10px 10px 10px 10px;
     display: inline-block;
     vertical-align: top;
-    background-color: #d6d1c6;  
-    /*   
-    margin-top: 0px;
-    height:580px;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    background-color:#FFFFFF;
-    width:222px;
-    border-radius: 10px 10px 10px 10px;   
-    */
+    background-color: #d6d1c6;     
 }
 
 #pageMenu {
-   
-    margin-top: 30px;
-    margin-bottom: 30px;
+   min-width: 220px;
+   min-height: 230px;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 
 #contenu
-{    
-  
+{      
   display: inline-block;  
   vertical-align: top;
-  background-color: #d7d7d7;
+  background-color: #d6d1c6;   
   border-radius:10px 10px 10px 10px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -223,8 +221,8 @@ hr {
 /* fin navigation */
 #pied {
     display: block;
-    background-color: #B5AE9E;
-    background-image: url("fond-pied.jpg");
+    /*background-color: #B5AE9E;*/
+    background-image: url("fond-pied.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     color: #FFFFFF;

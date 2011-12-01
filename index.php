@@ -172,13 +172,14 @@ $(document).ready( function () {
     <div id="page_lvl1">
 <div id="menu">
 
+<div id="pageMenu" class="navigation"> 
     
 <?php
 	if ($right != 0)
 	{
 ?>
 <!-- Affichage du menu-->
-<div id="pageMenu" class="navigation">
+
 <p class="hidden">Menu principal :</p>
 <ul>
     <li id="menu1">
@@ -252,9 +253,8 @@ else
         Universit&eacute; de Poitiers - 15, rue de l'H&ocirc;tel Dieu - 86034 POITIERS Cedex - France - T&eacute;l : (33) (0)5 49 45 30 00 - Fax : (33) (0)5 49 45 30 50 - webmaster@univ-poitiers.fr
         - <a href="/83681377/0/fiche___pagelibre/&amp;RH=1268304565657" accesskey="8">Cr&eacute;dits et mentions l&eacute;gales</a>
     </p>
-</div><!-- Fin div#pied -->
-    
+</div><!-- Fin div#pied -->  
 </div>
-
+</div>
 </body>
 </html>
