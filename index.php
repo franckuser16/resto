@@ -75,7 +75,8 @@ else
 <head><title>Restonux</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" media="screen" href="test.css"/> 
+<link rel="stylesheet" type="text/css" media="screen" href="css_default.css"/> 
+<!--<link rel="stylesheet" type="text/css" media="screen" href="general_style.css"/> -->
 <!--[if IE ]>
         <link rel="stylesheet" href="style_ie.css" />
 <![endif]-->
@@ -142,119 +143,114 @@ $(document).ready( function () {
 
 </head>
 <body>
-        
-<a name="top" id="top"></a>
+    <a name="top" id="top"></a>
 
-<div id="global"><!-- Balise fermee dans le fichier footer.jsp -->        
-       
+    <div id="global"><!-- Balise fermee dans le fichier footer.jsp -->        
         <hr />
-
+        
         <div id="bandeau">        
-                
-                <h1 class="hidden">UFR Science Fondamentales et Appliquées - Université de Poitiers - Universit&eacute; de Poitiers</h1>
-                
-                <div id="bandeauLogos">
-                
-                        <a href="http://www.univ-poitiers.fr" title="Aller sur le portail de l'Universit&eacute; de Poitiers">
-                        <img src="http://sfa.univ-poitiers.fr/images/logo-up.gif" alt="Logo de l'Universit&eacute; de Poitiers" />
-                        </a>                       
-                        <a href="http://sfa.univ-poitiers.fr/" title="Retour &agrave; la page d'accueil du site" accesskey="1">
-                        <img src="http://sfa.univ-poitiers.fr/images/logo-composantes-sfa.gif" alt="Logo de UFR Science Fondamentales et Appliquées - Université de Poitiers" />                                                                       
-                        </a>                        
-                </div> <!-- fin #bandeauLogos -->
+    
+            <h1 class="hidden">UFR Science Fondamentales et Appliquées - Université de Poitiers - Universit&eacute; de Poitiers</h1>
+            <div id="bandeauLogos">
+            
+                <a href="http://www.univ-poitiers.fr" title="Aller sur le portail de l'Universit&eacute; de Poitiers">
+                    <img src="http://sfa.univ-poitiers.fr/images/logo-up.gif" alt="Logo de l'Universit&eacute; de Poitiers" />
+                </a>                       
+                <a href="http://sfa.univ-poitiers.fr/" title="Retour &agrave; la page d'accueil du site" accesskey="1">
+                    <img src="http://sfa.univ-poitiers.fr/images/logo-composantes-sfa.gif" alt="Logo de UFR Science Fondamentales et Appliquées - Université de Poitiers" />                                                                       
+                </a>                        
+            
+            </div> <!-- fin #bandeauLogos -->
         </div> <!-- fin #bandeau -->       
         <hr />
-<div id="page">
-
-<div id="entete">
-<h1><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=logout" ><img src="images/deco.png"></a><?php echo "$titre"; ?></h1>
-</div>
-    <div id="page_lvl1">
-<div id="menu">
-
-<div id="pageMenu" class="navigation"> 
     
+        <div id="page"> 
+            <div id="entete">              
+                <h1><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=logout" ><img src="images/deco.png"></a><?php echo "$titre"; ?></h1>
+            </div>
+            
+            <div id="page_lvl1">
+                <div id="menu">
+                    <div id="pageMenu" class="navigation"> 
+                        
 <?php
-	if ($right != 0)
-	{
+if ($right != 0)
+{
 ?>
-<!-- Affichage du menu-->
-
-<p class="hidden">Menu principal :</p>
-<ul>
-    <li id="menu1">
-        <span class="uppercase">            
-                <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=accueil">Accueil</a>                
-        </span>   
-    </li>    
-    <li id="menu2" class="toggleSubMenu">
-        <a class="uppercase" title="Afficher le sous-menu" href=""> Restauration </a>
-        <ul id="smenu2" class="subMenu" style="display: none;">
-            <li>
-                <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=restore">Effectuer une restauration</a>
-            </li>
-        </ul>
-    </li>
-    <li id="menu3" class="toggleSubMenu">
-        <a class="uppercase" title="Afficher le sous-menu" href=""> Sauvegarde </a>
-        <ul id="smenu3" class="subMenu" style="display: none;">
-            <li>
-            <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=save">Créer une nouvelle sauvegarde</a>
-            </li>
-        </ul>
-    </li>
-    <li id="menu4" class="toggleSubMenu">
-        <a class="uppercase" title="Afficher le sous-menu" href=""> Administration des postes </a>    
-        <ul id="smenu4" class="subMenu" style="display: none;">
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=adhesion_domain">Adhésion au domaine</a></li>
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=actions_distance">Actions à distance</a></li>
-        </ul>
-    </li>    
-    <li id="menu5" class="toggleSubMenu">
-        <a class="uppercase" title="Afficher le sous-menu" href=""> Gestion de la base de donnée </a>
-        <ul id="smenu5" class="subMenu" style="display: none;">
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=salles">Gérer les salles</a></li>
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=images">Gérer les images</a></li>
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=comptes_utilisateurs">Gérer les comptes utilisateurs</a></li>
-            <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=domaines">Gestion des domaines</a></li>  
-        </ul>
-    </li>   
-</ul>
-
+<!----------------------------- Affichage du menu------------------------------>
+                        <p class="hidden">Menu principal :</p>
+                        <ul>
+                            <li id="menu1">
+                                <span class="uppercase">            
+                                    <a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=accueil">Accueil</a>                
+                                </span>   
+                            </li>    
+                            <li id="menu2" class="toggleSubMenu">
+                                <a class="uppercase" title="Afficher le sous-menu" href=""> Restauration </a>
+                                <ul id="smenu2" class="subMenu" style="display: none;">
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=restore">Effectuer une restauration</a></li>  
+                                </ul>
+                            </li>
+                            <li id="menu3" class="toggleSubMenu">
+                                <a class="uppercase" title="Afficher le sous-menu" href=""> Sauvegarde </a>
+                                <ul id="smenu3" class="subMenu" style="display: none;">
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=save">Créer une nouvelle sauvegarde</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu4" class="toggleSubMenu">
+                                <a class="uppercase" title="Afficher le sous-menu" href=""> Administration des postes </a>    
+                                <ul id="smenu4" class="subMenu" style="display: none;">
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=adhesion_domain">Adhésion au domaine</a></li>
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=actions_distance">Actions à distance</a></li>
+                                </ul>
+                            </li>    
+                            <li id="menu5" class="toggleSubMenu">
+                                <a class="uppercase" title="Afficher le sous-menu" href=""> Gestion de la base de donnée </a>
+                                <ul id="smenu5" class="subMenu" style="display: none;">
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=salles">Gérer les salles</a></li>
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=images">Gérer les images</a></li>
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=comptes_utilisateurs">Gérer les comptes utilisateurs</a></li>
+                                    <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?menu=domaines">Gestion des domaines</a></li>  
+                                </ul>
+                            </li>   
+                        </ul>
+<!----------------------------- fin du menu------------------------------------>
 
 <?php  } ?>
-</div>
-</div>  
-<div id="contenu">
+                        
+                    </div>
+                </div>  
+                <div id="contenu">
 <?php
 
 if ($right == 0)
-{
-	include_once("authentification.php");
-}
+    {
+    include_once("authentification.php");
+    }
 else
-{
-	if (file_exists("contenu/$menu.php"))
-	{
-		include_once("contenu/$menu.php");
-	}
-	else
-	{
-		include_once("contenu/notfound.php");
-	}
+    {
+if (file_exists("contenu/$menu.php"))
+    {
+    include_once("contenu/$menu.php");
+    }
+else
+    {
+    include_once("contenu/notfound.php");
+    }
 }
 
 ?>
-</div>
-</div>
-        
-<div id="pied">
-    <p>
-        Universit&eacute; de Poitiers - 15, rue de l'H&ocirc;tel Dieu - 86034 POITIERS Cedex - France - T&eacute;l : (33) (0)5 49 45 30 00 - Fax : (33) (0)5 49 45 30 50 - webmaster@univ-poitiers.fr
-        - <a href="/83681377/0/fiche___pagelibre/&amp;RH=1268304565657" accesskey="8">Cr&eacute;dits et mentions l&eacute;gales</a>
-    </p>
-</div><!-- Fin div#pied -->  
-</div>
-</div>
+                </div>
+            </div>
+
+            <div id="pied">    
+                <p>
+                    Universit&eacute; de Poitiers - 15, rue de l'H&ocirc;tel Dieu - 86034 POITIERS Cedex - France -
+                    T&eacute;l : (33) (0)5 49 45 30 00 - Fax : (33) (0)5 49 45 30 50 - webmaster@univ-poitiers.fr
+-                   <a href="/83681377/0/fiche___pagelibre/&amp;RH=1268304565657" accesskey="8">Cr&eacute;dits et mentions l&eacute;gales</a>
+                </p>
+            </div><!-- Fin div#pied -->  
+        </div>
+    </div>
 </body>
 </html>

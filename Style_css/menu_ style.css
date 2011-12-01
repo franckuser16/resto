@@ -1,0 +1,66 @@
+/* 
+    Document   : menu_ style
+    Created on : 1 déc. 2011, 11:35:06
+    Author     : Robin guindeuil <guindeuil-pro@live.fr>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* 
+    cette feuille de style contient tout les infos sur le menu  
+*/
+
+li { /* cache les puce dans les li , ici le grand menu affiche normalement des puces a gauche */
+    list-style-type: none;
+}
+
+#menu /* def general du menu donne les infos de base (taille,forme, etc)  */
+{   
+    margin: 5px;                                        /* bordure exterieur */
+    border-radius: 10px 10px 10px 10px;                 /* sauf pour IE lissage des bords de la div */
+    display: inline-block;                              /* trans du menu en inline-block pour meilleur positionnement */
+    vertical-align: top;                                /* pour aligner les div sur leurs parties hautes  */   
+}
+
+#pageMenu {
+   min-width: 220px;                                    /* taille mini */
+   min-height: 230px;                                   /* hauteur mini */
+   margin-top: 30px;                                    /* bordure haut */
+   margin-bottom: 30px;                                 /* bordure bas */
+}
+
+.navigation ul li {  /* dans le menu sert de séparation entre les différants menu */
+    border-top: 1px solid #E0E0E0;                      /* ligne sur le bord superieur de couleur blanc */
+    padding: 0;                                         /* pas d'espace inter */
+}
+
+.navigation a {  /* permet la décoration du menu de chacun des liens */
+    background-color: #CCC7BC;                          /* couleur de fonds des liens en gris */ 
+    color: #FFFFFF;                                     /* couleur du texte en blanc */ 
+    display: block;                                     /* mise au format de block */
+    font-size: 0.9em;                                   /* taille des ecriture */
+    height: 15px;                                       /* hauteur des cellules */
+    padding: 5px 27px 5px 10px;                         /* marge interne positionnement */
+    text-decoration: none;                              /* suppression de la décoration */
+}
+
+.navigation a:hover, .navigation a:focus, .navigation a:active { 
+/* survole de la souris changement de couleur de fond des liens */
+    background-color: #B5AE9E;                          /* couleur de fond */
+    color: #FFFFFF;                                     /* couleur du texte */
+}
+
+.navigation ul.subMenu a { /* donne la couleur de fond au sous-menu ainsi qu au texte */
+    background-color: #FFFFFF;                          /* couleur de fond */
+    color: #989489;                                     /* couleur du texte */
+}
+.navigation ul.subMenu a:hover, .navigation ul.subMenu a:focus, .navigation ul.subMenu a:active {
+/* passage de la souris : changement des couleurs des sous liens  */
+    background-color: #B5AE9E;                          /* couleur de fond */
+    color: #FFFFFF;                                     /* couleur du texte */
+}

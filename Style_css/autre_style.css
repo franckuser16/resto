@@ -1,0 +1,36 @@
+/* 
+    Document   : autre_style
+    Created on : 1 déc. 2011, 11:35:44
+    Author     : Robin guindeuil <guindeuil-pro@live.fr>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*******************************************************************************
+    sur cette feuille css sera defini les autre types de style 
+    moins général ou alors qui sont bien précis pour une zone particulière.
+*******************************************************************************/
+
+#auth{   /* div qui continent la partie de l'authentifiction des utilisateurs*/    
+   text-align: center;                                  /* centre la div au milieu */   
+}
+
+#auth div{      /* deux div contiennent les input de nom et mdp il sont transformer en inline-block pour mieux les positionner */
+    display: inline-block;                              /* transformation des input */
+    padding: 5px;                                       /* mise en place d'une marge inter autour des div */
+}
+#bouton_valid{  /* changement du bouton de validation pour une meilleur concordance avec la page */
+    width: 180px;                                       /* largeur du bouton */
+    height: 30px;                                       /* hauteur du bouton */
+    background-color: #d6d1c6;                          /* couleur de fond */
+    color: #605949;                                     /* couleur du texte */
+    font-weight: bold;                                  /*  mise en gras du texte */
+}
+
+#bouton_valid:hover{   /* lors du passage sur le bouton  */
+    background-color: #B5AE9E;   /* changement de la couleur pour un gris plus foncer */
+}
