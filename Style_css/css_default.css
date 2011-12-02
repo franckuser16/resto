@@ -1,0 +1,297 @@
+/* 
+    Document   : test
+    Created on : 3 nov. 2011, 11:14:31
+    Author     :  Robin guindeuil <guindeuil-pro@live.fr>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body {
+    /*background-color: #FFFFFF;*/
+    color: #000000;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #605949;
+}
+* {   
+    margin: 0;
+    padding: 0;  
+}
+/*
+img {
+    border: medium none;
+}*/
+li { /* cache les puce dans les li , ici le grand menu affiche normalement des puces a gauche */
+    list-style-type: none;
+}
+html {
+    font-size: 100%;
+    
+}
+body {  /* def genral */
+    background-color: #E5EAEB; /* couleur du fond de la page en un blanc leger*/
+    margin: 0; /* ?????? */
+    text-align: center;  
+}
+a {
+    color: #FF6600;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    display: none;
+}
+
+.hidden {
+    font-size: 1px;
+    left: -10000px;
+    position: absolute;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+/***********************************************/
+#global {
+    
+    color: #403F3D;
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 0.75em;
+    margin: 10px auto;
+    text-align: left;
+    width: 999px;
+}
+
+#bandeau {
+   /* background-color: #B5AE9E;*/
+    background-image: url("../images/fond-bandeau.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 147px;
+    border-radius: 10px 10px 0px 0px;
+}
+#bandeauLogos {
+    float: left;
+    padding-left: 2px;
+}
+#bandeauLogos img {
+    margin-left: 10px;
+}
+#auth{
+   text-align: center;      
+}
+#auth div{
+    display: inline-block;
+    padding: 5px;
+}
+#bouton_valid{
+    width: 180px;
+    height: 30px;
+    background-color: #d6d1c6; 
+    color: #605949; 
+    font-weight: bold;
+}
+#bouton_valid:hover{
+    background-color: #B5AE9E;   
+}
+#page {  /*conteneur de la page bandeau + pied */
+}
+
+#page_lvl1{  /* conteneur de la page sans le bandeau et le pied de page */
+    margin-top: 4px;
+    border-radius: 10px 10px 0px 0px;
+    min-height: 400px;
+    background-color: #BBB;
+}
+#menu 
+{   
+    margin: 5px;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #d6d1c6;     
+}
+
+#pageMenu {
+   min-width: 220px;
+   min-height: 145px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#contenu
+{      
+  display: inline-block;  
+  vertical-align: top;
+  background-color: #d6d1c6;   
+  border-radius:10px 10px 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 5px 15px 15px;
+  width: 735px;
+    /*
+    margin-top: -21px;
+    background-color:#FFFFFF;
+    padding-left: 200px;
+    margin-left:23px;
+    width: 704px; 
+    height:820px;
+    color: #000000;
+    overflow: auto;
+    */
+}
+/*
+#pageMenuCoordonnees {
+    color: #ABABCE;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+*/
+/*****************************************/
+/*      navigation menu         */
+.navigation ul {  /* sert a rien enfin normalement */
+    background: none repeat scroll 0 0 #B5AE9E;
+    color: #FFFFFF;
+    width: 222px;
+}
+
+.navigation ul li {  /* dans le menu sert de séparation entre les différants menu */
+    border-top: 1px solid #E0E0E0;                  /* ligne sur le bord superieur de couleur blanc */
+    padding: 0;                                     /* pas d'espace inter */
+}
+
+.navigation ul li em {  /* pas de em sert a rien */
+    font-style: normal;
+}
+
+.navigation ul li ul li:first-child { /* aucune réation  */
+    border-top-style: none;
+}
+
+.navigation a {  /* permet la décoration du menu de chacun des liens */
+    background-color: #CCC7BC;
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.9em;
+    height: 15px;
+    padding: 5px 27px 5px 10px;
+    text-decoration: none;
+}
+
+.navigation ul li em a {
+/*    background-color: #B5AE9E;*/
+}
+
+.navigation .toggleSubMenu a { /* mise en place d'une image que icic nous ne fesont pas  */
+    background-image: url("images/down.gif");           
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.navigation .open a {  /* mise en place d'une image que nous ne fesont pas  */
+    background-image: url("images/up.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.navigation a:hover, .navigation a:focus, .navigation a:active { 
+/* survole de la souris changement de couleur de fond des liens */
+    background-color: #B5AE9E;
+    color: #FFFFFF;
+}
+
+.navigation .subMenu {  /* pas de changement*/
+    background-color: #FFFFFF;
+}
+
+.navigation ul.subMenu a { /* donne la couleur de fond au sous-menu ainsi qu au texte */
+    background-color: #FFFFFF;
+    color: #989489;
+}
+
+.navigation ul.subMenu a:hover, .navigation ul.subMenu a:focus, .navigation ul.subMenu a:active {
+/* passage de la souris : changement des couleurs des sous liens  */
+    background-color: #B5AE9E;
+    color: #FFFFFF;
+}
+/* fin navigation */
+#pied {
+    display: block;
+    /*background-color: #B5AE9E;*/
+    background-image: url("../images/fond-pied.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 0.88em;
+    padding: 5px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+#pied a {
+    color: #FFFFFF;
+   /* float:right;*/
+}
+/******************************************************************************/
+/****************** debut de l'intégartion css restonux ***********************/
+#entete h1
+{
+background-color: #6495ed;
+font-size: 25px;
+color:#FFFFFF;
+margin-top:0px;
+text-align:left;
+padding-left: 30px;
+border-radius: 0px 0px 10px 10px;
+border: 1px #4F82CB solid;
+
+}
+#entete h1 img{ 
+   margin-right: 10px;
+   margin-top: 2px;
+   float: right;
+   border: none;
+}
+
+/******************************************************************************/
+/****************** fenetre de restonux popup ***********************/
+.leightbox_top {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+.leightbox_bottom {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+
+
+
+

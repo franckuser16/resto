@@ -1,5 +1,10 @@
 <h1> Effectuer une sauvegarde </h1>
 <hr>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
 <p> Grâce à ce menu, vous allez pouvoir sauvegarder un ordinateur particulié.<br>
 L'ordinateur sera réveillé via Wake On Lan, pour pouvoir démarrer directement par le réseau. <br>
 L'ordinateur doit être <a href="<?php echo "".$_SERVER['PHP_SELF']."?menu=actions_distance"; ?>">éteint</a> correctement. <br>

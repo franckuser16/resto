@@ -1,0 +1,203 @@
+/* 
+    Document   : general_style
+    Created on : 1 déc. 2011, 11:04:52
+    Author     : Robin guindeuil <guindeuil-pro@live.fr>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/*******************************************************************************
+    debut de la feuille CSS pour le site restonux.
+    ce CSS va definir les style generaux pour la page donc:
+    - des definitions globals
+    - les bandeaux (head et pied)
+    - le conteneur
+    - les popups de validation
+*******************************************************************************/
+
+/******************************************************************************/
+/*  définition de style général                                               */
+/******************************************************************************/
+body {
+    color: #000000;                         /* mise par défaut des écritures en noir */
+}
+
+h1, h2, h3, h4, h5, h6 {                    /* définition de titre */
+    color: #605949;             
+}
+* {         /* met par défaut les tableaux sans ecartement inter et exter */
+    margin: 0;
+    padding: 0;  
+}
+
+html {  /* definition de la taille general de la page */
+    font-size: 100%;   
+}
+
+body {  /* def genral */
+    background-color: #E5EAEB;              /* couleur du fond de la page en un blanc leger*/
+    text-align: center;                     /* la page est centrer par cette ligne ... */
+}
+a {  /* definition des liens */
+    color: #FF6600;                         /* couleur */
+    text-decoration: none;                  /* enléve le trait en dessous du lien */
+}
+a:hover {   /* au passage de la souris changement de decoration */
+    text-decoration: underline;
+    background-color: #d6d1c6;
+}
+
+hr {    /* utilise en particuiler dans les contenus  */
+    display: none;
+}
+
+.hidden { /* cache le nom de  menu pour affichage en cas de css defaut */
+    font-size: 1px;
+    left: -10000px;
+    position: absolute;
+}
+
+.uppercase { /* permet de tranformer des textes en lettres MAG */
+    text-transform: uppercase;
+}
+
+/******************************************************************************/
+/* definition de zone | Tete | Corps | Pied                                   */
+/******************************************************************************/
+
+#bandeau { /* baniere du site avec nom,position, taille, bord,reptition */
+    background-image: url("../images/fond-bandeau.png");   /* direction du bandeau */
+    background-position: 0 0;                           /* position en fond */
+    background-repeat: no-repeat;                       /* pas de repetition de l'image */
+    height: 147px;                                      /* hauteur */
+    border-radius: 10px 10px 0px 0px;                   /* sauf pour IE lissage des bords de l'image */
+}
+
+#bandeauLogos { /* reposition des logos de l'univ qui sont décaler */
+    float: left;
+    padding-left: 2px;
+}
+
+#bandeauLogos img {  /* ecartement du logos 2 par rapport au logos 2  */
+    margin-left: 10px;
+}
+
+/******************************************************************************/
+
+#global {   /* grosse div, contient tout la page */
+    color: #403F3D;                                 /* couleur des lettres */
+    font-family: "Trebuchet MS",                    /*  type de police */
+                 Verdana,
+                 Arial,
+                 Helvetica,
+                 sans-serif;
+    font-size: 0.75em;                              /* def par defaut de la taille  */
+    margin: 10px auto;                              /* centrage de la page  */
+    text-align: left;                               /* text mise a gauche  */
+    width: 999px;                                   /* largeur de la page */
+    
+}
+
+#entete h1{  /* def d'un petit bandeau qui contient le nom de la page actuel */
+    background-color: #6495ed;                      /* couleur bleu en fond */
+    font-size: 25px;                                /* taille du texte */
+    color:#FFFFFF;                                  /* texte couleur blanc */
+    margin-top:0px;                                 /* bordure aucune, mise a 0 */
+    text-align:left;                                /* alignement du texte vers la gauche */
+    padding-left: 30px;                             /* marge exterieur gauche décaler de 30 */
+    border-radius: 0px 0px 10px 10px;               /* sauf pour IE lissage des bords inferieurs de la div */
+    border: 1px #4F82CB solid;                      /* bordure légere avec un bleu plus foncé */
+}
+
+#entete h1 img{  /* image placé sur le coté droit de la div et a pour fonction la déconnection */
+   margin-right: 10px;                              /* marge externe droit */
+   margin-top: 2px;                                 /* margin externe haut */
+   float: right;                                    /* déclaration de l'image en flottant pour position */
+   border: none;                                    /* suppression des contours possible mise par défaut sur l'image (IE met un contour) */
+}
+
+#page {  /*conteneur de la page bandeau + pied */
+    /* aucune déclaration  */ 
+}
+
+
+#page_lvl1{  /* conteneur de la page sans le bandeau et le pied de page */
+    margin-top: 4px;                                /* marge exter haut */
+    border-radius: 10px 10px 0px 0px;               /* sauf pour IE lissage de la div */
+    min-height: 400px;                              /* def d'une taille minimum */
+    background-color: #BBB;                         /* couleur de fond */
+}
+
+#contenu{      
+  display: inline-block;                            /* def de la div en inline-block pour la positionner a coté du menu */
+  vertical-align: top;                              /* permet de faire l alignement en fonc du haut de la div */
+  background-color: #d6d1c6;                        /* couleur du fond de la div */
+  border-radius:10px 10px 10px 10px;                /* sauf pour IE lissage des bord de la div */
+  margin-top: 5px;                                  /* marge exter haut */
+  margin-bottom: 5px;                               /* marge exter bas */
+  padding: 15px 5px 15px 15px;                      /* marge inter def de 15 partout sauf droit */
+  width: 735px;                                     /* largeur defini pour tenir dans la fenetre */
+   
+}
+
+/******************************************************************************/
+
+#pied { /* pied de la page avec l'image de ainsi que tout le parametre */
+    display: block;                                     /* div mise en block pour facilité le positionnement */
+    background-image: url("../images/fond-pied.png");      /* chemin vers l'image' */
+    background-position: center bottom;                 /* positionnement de l'image */
+    background-repeat: no-repeat;                       /* pas de répétition  de l'image */
+    color: #FFFFFF;                                     /* texte mis en blanc */
+    font-size: 0.88em;                                  /* taille du texte */
+    padding: 5px 10px;                                  /* marge */
+    border-radius: 0px 0px 10px 10px;                   /* sauf pour IE lissage des coins */
+}
+
+#pied a {  /* lien du pied de page mise en blanc */
+    color: #FFFFFF;
+}
+
+/******************************************************************************/
+/* definition des popup des validations de commandes                          */
+/******************************************************************************/
+.leightbox_top {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+.leightbox_bottom {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	width: 50%;
+	height: 25%;
+	padding: 1em;
+	border: 1em solid #B8B8B8;
+	background-color: white;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+
+
+
+
+
