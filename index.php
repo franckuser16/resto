@@ -49,16 +49,16 @@ else
 {
 	$menu="accueil";
 }
-	
-	if ($menu == "logout")
-	{
-		session_destroy();
-		$right=0;
-		$_SESSION['right']=0;
-		$login="";
-		$_SESSION['login']="";
-		$menu="accueil";
-	}
+
+if ($menu == "logout")
+{
+	session_destroy();
+	$right=0;
+	$_SESSION['right']=0;
+	$login="";
+	$_SESSION['login']="";
+	$menu="accueil";
+}
 	
 if ($menu == "access")
 {
